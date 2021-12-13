@@ -36,7 +36,7 @@ const Post = ({ post, currentId, setCurrentId }) => {
         <Button size="small" color="primary" onClick={() => { dispatch(likePost(post._id)) }}>
           <ThumbUpAltIcon fontSize="small" />&nbsp;Like {post.likeCount}
         </Button>
-        <Button size="small" color="primary" onClick={() => { dispatch(deletePost(post._id)) }}>
+        <Button size="small" color="secondary" onClick={() => { dispatch(deletePost(post._id)) }}>
           <DeleteIcon fontSize="small" /> Delete
         </Button>
       </CardActions>
